@@ -1,0 +1,14 @@
+// 640500355 Jirapat Pichai
+
+public class PaymentController {
+
+	private IPayment paymentMethod;
+	
+	public void setPaymentMethod(IPayment paymentMethod) {
+		this.paymentMethod = paymentMethod;
+	}
+	
+	public void pay() {
+		this.paymentMethod.pay();
+	}
+}
